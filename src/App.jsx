@@ -1,9 +1,10 @@
+import Home from "./components/Home";
 
 
-export const App = () => {
+export default function App() {
   return (
     <div>
-
+      <Home />
     </div>
   )
 }

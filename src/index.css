@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+  /* ── Fondo y superficies ── */
+  --color-principal:         #F7F5F2;   /* fondo principal crema */
+  --color-surface:    #EFEDE9;   /* superficie secundaria */
+  --color-card:       #FFFFFF;   /* cards e inputs */
+  --color-overlay:    #E8E5DF;   /* hover suave sobre surface */
+
+  /* ── Texto ── */
+  --color-ink:        #0F0F0E;   /* negro casi puro, headings */
+  --color-body:       #2C2C29;   /* texto principal */
+  --color-muted:      #6B6B66;   /* texto secundario */
+  --color-hint:       #A8A8A3;   /* placeholders, labels */
+
+  /* ── Bordes ── */
+  --color-line:       #DDDBD6;   /* borde normal */
+  --color-line-dark:  #B5B2AB;   /* borde énfasis */
+
+  /* ── Acento principal — negro puro ── */
+  --color-accent:     #0F0F0E;
+  --color-accent-inv: #F7F5F2;   /* texto sobre acento */
+
+  /* ── Acento cálido — arena tostada ── */
+  --color-warm:       #C8975A;   /* dorado terroso */
+  --color-warm-light: #F2E4CE;   /* fill suave warm */
+  --color-warm-dark:  #8F6230;   /* hover warm */
+
+  /* ── Acento verde — disponibilidad ── */
+  --color-alive:      #22C55E;   /* dot de disponible */
+  --color-alive-bg:   #DCFCE7;   /* badge fondo */
+  --color-alive-dark: #15803D;   /* texto sobre alive-bg */
+
+  /* ── Acento grafito — gris con personalidad ── */
+  --color-slate:      #4A4A45;   /* gris oscuro útil */
+  --color-slate-light:#DEDCDA;   /* fill suave slate */
+
+  /* ── Acento terracota — toque de color ── */
+  --color-terra:      #C0573A;   /* terracota vibrante */
+  --color-terra-light:#FAE5DF;   /* fill suave terra */
+  --color-terra-dark: #8C3A24;   /* hover terra */
+
+  /* ── Acento azul pizarra — técnico ── */
+  --color-steel:      #3A6FA8;   /* azul apagado */
+  --color-steel-light:#DDE8F5;   /* fill suave steel */
+  --color-steel-dark: #245189;   /* hover steel */
+
+  /* ── Tipografía ── */
+  --font-sans:  'IBM Plex Sans', sans-serif;
+  --font-mono:  'IBM Plex Mono', monospace;
+}
