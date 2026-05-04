@@ -58,8 +58,8 @@ export default function About({ id }) {
     }, { scope: container })
 
     return (
-        <section id={id} className="w-full xl:px-80 px-5 h-auto pb-10 border-b border-line-dark">
-            <div ref={container} className="flex flex-col md:items-stretch gap-10 mt-10 md:min-h-150">
+        <section id={id} className="component">
+            <div ref={container} className="inside-div">
                 <div className="title flex w-full h-auto justify-start gap-3">
                     <span className="font-mono text-md text-hint">01</span>
                     <span className="text-md font-mono text-ink">SOBRE MI</span>

@@ -49,3 +49,12 @@
   --font-sans:  'IBM Plex Sans', sans-serif;
   --font-mono:  'IBM Plex Mono', monospace;
 }
+
+@layer components {
+  .component{
+    @apply w-full xl:px-80 px-5 h-auto pb-10 border-b border-line-dark
+  }
+  .inside-div{
+    @apply flex flex-col md:items-stretch gap-10 mt-10 md:min-h-150
+  }
+}
