@@ -6,7 +6,6 @@ import Tecnologias from "./Tecnologias";
 export default function Home() {
     return (
         <div className="w-full h-full bg-principal flex flex-col">
-            <NavBar />
             <div className="flex flex-col gap-5">
                 <Hero id="inicio" />
                 <About id="sobremi" />

@@ -3,6 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Link } from "react-router";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -13,6 +14,7 @@ export default function NavBar() {
         { name: "inicio", target: "inicio" },
         { name: "sobre mi", target: "sobremi" },
         { name: "tegnologias", target: "tegnologias" },
+        { name: "proyectos", target: "proyectos" },
         { name: "contacto", target: "contacto" },
     ];
 
@@ -31,12 +33,14 @@ export default function NavBar() {
     return (
         <nav className="sticky xl:px-80 top-0 z-50 flex w-full h-20 justify-between items-center border-b border-line bg-principal px-6">
             <div className="py-5">
-                <h2
-                    onClick={() => handleScroll("incio")}
-                    className="text-md font-mono hover:cursor-pointer tracking-wider"
-                >
-                    luca.dev
-                </h2>
+                <Link to="/">
+                    <h2
+                        onClick={() => handleScroll("incio")}
+                        className="text-md font-mono hover:cursor-pointer tracking-wider"
+                    >
+                        luca.dev
+                    </h2>
+                </Link>
             </div>
 
             <div className="text-ink">
