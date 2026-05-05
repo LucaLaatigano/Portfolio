@@ -8,10 +8,7 @@ export default function App() {
     <div className="w-full h-full bg-principal flex flex-col">
       <NavBar />
       <div className="flex flex-col gap-5">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Elemenst />} />
-        </Routes>
+        <Home />
       </div>
     </div>
   )
