@@ -1,5 +1,6 @@
 import About from "./About";
 import Contacto from "./Contacto";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
@@ -14,6 +15,7 @@ export default function Home() {
                 <Tecnologias id="tegnologias" />
                 <Projects id="proyectos" />
                 <Contacto id="contacto" />
+                <Footer />
             </div>
         </div>
     )
