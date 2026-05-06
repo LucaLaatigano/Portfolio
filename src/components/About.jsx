@@ -6,7 +6,7 @@ import { useRef } from "react"
 gsap.registerPlugin(ScrollTrigger, SplitText)
 export default function About({ id }) {
     const dataABout = [
-        { type: "carrera", data: "Ingeniería en Sistemas" },
+        { type: "carrera", data: "Ingeniería en Informatica" },
         { type: "año", data: "Tercer Año" },
         { type: "foco", data: "Frontend · Interfaces" },
         { type: "ubicación", data: "Salta, Argentina" },
