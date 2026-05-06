@@ -55,8 +55,8 @@ export default function Projects({ id }) {
 
                 <div className="flex justify-center w-full h-auto py-5 items-stretch">
                     <p className="para text-lg text-muted w-full">
-                        A lo largo de todo mi camino he construido muchos proyectos con distintas tecnologías,
-                        algunos de estos son los siguientes:
+                        A lo largo de todo mi camino he construido muchos proyectos con distintas tecnologías,para ver todos mis proeyectos entra a mi <a href="https://github.com/LucaLaatigano" target="_blank" className="text-ink border-b hover:text-muted">GitHub</a>.
+                        Algunos de estos son los siguientes:
                     </p>
                 </div>
 

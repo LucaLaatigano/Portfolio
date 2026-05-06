@@ -1,4 +1,5 @@
 import About from "./About";
+import Contacto from "./Contacto";
 import Hero from "./Hero";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
@@ -12,6 +13,7 @@ export default function Home() {
                 <About id="sobremi" />
                 <Tecnologias id="tegnologias" />
                 <Projects id="proyectos" />
+                <Contacto id="contacto" />
             </div>
         </div>
     )
