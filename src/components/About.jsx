@@ -47,7 +47,6 @@ export default function About({ id }) {
             })
         })
 
-
     }, { scope: container })
 
     return (

@@ -37,7 +37,7 @@ export default function Footer() {
                     <ul className="flex flex-col gap-1">
                         <li className="text-muted text-xs md:text-sm tracking-wider">Salta, Argentina</li>
                         <li className="text-muted text-xs md:text-sm tracking-wider">+54 9 387 566-1422</li>
-                        <li className="text-muted text-xs md:text-sm tracking-wider">lucalatigano@gmail.com</li>
+                        <li className="text-muted text-xs md:text-sm tracking-wider">lucalatigano12@gmail.com</li>
                     </ul>
                 </div>
 
