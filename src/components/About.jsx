@@ -46,7 +46,7 @@ export default function About({ id }) {
                 ease: "power2.inOut"
             })
         })
-        return () => window.removeEventListener("resize", handleResize)
+
 
     }, { scope: container })
 
