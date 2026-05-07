@@ -4,7 +4,6 @@ import { ScrollTrigger, SplitText } from "gsap/all"
 import { useRef } from "react"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
-
 export default function About({ id }) {
     const dataABout = [
         { type: "carrera", data: "Ingeniería en Informatica" },
@@ -12,55 +11,43 @@ export default function About({ id }) {
         { type: "foco", data: "Frontend · Interfaces" },
         { type: "ubicación", data: "Salta, Argentina" },
     ]
-
     const container = useRef()
     const cardContainer = useRef()
-
     useGSAP(() => {
-        const paraEl = container.current.querySelector(".para")
-        const paraSplit = new SplitText(paraEl, { type: "lines" })
+        const paraSplit = new SplitText(".para", { type: "lines" })
         const allCards = gsap.utils.toArray(".card", cardContainer.current)
         const title = container.current.querySelector(".title")
 
-        const handleResize = () => {
-            paraSplit.revert()
-            paraSplit.split({ type: "lines" })
-        }
-        window.addEventListener("resize", handleResize)
+        const startItems = [title, ...paraSplit.lines]
 
-        gsap.set([title, ...paraSplit.lines], { opacity: 0, x: -100 })
-
-        ScrollTrigger.refresh()
-
-        gsap.from([title, ...paraSplit.lines], {
+        gsap.from(startItems, {
             opacity: 0,
             duration: 0.8,
             stagger: 0.16,
             x: -100,
             scrollTrigger: {
                 trigger: container.current,
-                start: "top 85%",
+                start: "top 70%",
                 toggleActions: "play none none none",
             },
             ease: "power2.inOut"
         })
 
         allCards.forEach(card => {
-            gsap.set(card, { opacity: 0, x: -100 })
             gsap.from(card, {
                 opacity: 0,
                 duration: 0.8,
                 x: -100,
                 scrollTrigger: {
                     trigger: card,
-                    start: "top 85%",
+                    start: "top 80%",
                     toggleActions: "play none none none",
                 },
                 ease: "power2.inOut"
             })
         })
-
         return () => window.removeEventListener("resize", handleResize)
+
     }, { scope: container })
 
     return (
