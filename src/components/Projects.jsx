@@ -12,7 +12,7 @@ export default function Projects({ id }) {
         { name: "DashBoard", about: "Plantilla para un DashBoard, adaptable para todos los usos y lista para ser implementada con un Backend", technologies: ["React", "TailwindCSS", "Gsap", "Vite", "Recharts"], link: "https://dash-board-orcin-rho.vercel.app/", code: "https://github.com/LucaLaatigano/DashBoard" },
         { name: "Ecommerce", about: "Plantilla para un Ecommerce, adaptable para todos los usos y lista para ser implementada con un Backend", technologies: ["react", "TailwindCSS", "FakeStoreAPI", "ReactRouter", "Vite"], link: "https://e-commerce-pink-rho-83.vercel.app/", code: "github.com/LucaLaatigano/Ecommerce" },
         { name: "Movies App", about: "Sitio web de peliculas, donde podes buscar cualquier pelicula y ponerlas en favoritos", technologies: ["React", "TailwindCSS", "TheMovieDbAPI", "Vite"], link: "https://movie-app-three-neon.vercel.app/", code: "https://github.com/LucaLaatigano/Movie-App" },
-        { name: "MovieAPI", about: "CRUD API para peliculas, realizada utilizando la arquitectura MVC", technologies: ["NodeJS", "ExpressJS", "Zod", "JSON"], link: "https://github.com/LucaLaatigano/Movie-API" },
+        { name: "MovieAPI", about: "CRUD API para peliculas, realizada utilizando la arquitectura MVC", technologies: ["NodeJS", "ExpressJS", "Mysql", "JSON"], link: "https://github.com/LucaLaatigano/Movie-Rest-Api" },
     ]
     const container = useRef()
     useGSAP(() => {
